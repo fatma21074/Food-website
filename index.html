@@ -3,41 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOD</title>
+    <title>Borcelle Restaurant</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- start navbar -->
-     <nav class="navbar navbar-expand-lg ">
-  <div class="container ">
-    <a class="navbar-brand" href="#">
-        <img src="images/images.png" alt="Food brand logo" class="d-inline-block align-text-center">
-        
+<nav id="navbarSection" class="navbar navbar-expand-lg fixed-top ">
+  <div class="container">
+    
+    <a class="navbar-brand fs-1 fw-bold " href="#">
+      <img src="images/Yellow and Brown Kitchen Food Logo.png" alt="Food brand logo" width="50" class="rounded-circle me-2">
+     
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- Button for small screens -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Pizza</a>
+          <a class="nav-link  border border-light rounded-pill px-4 py-2" href="#home">Home</a>
         </li>
+
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  border border-light rounded-pill px-4 py-2" href="#menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+             <li class="nav-item">
+          <a class="nav-link active" href="#imges-products">Pizza</a>
+           </li>
+           <li class="nav-item">
+          <a class="nav-link  " href="#imges-products">pasta</a>
+            </li>
+             <li class="nav-item">
+          <a class="nav-link  " href="#imges-products">hamburger</a>
+             </li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="nav-item">
+          <a class="nav-link  " href="#imges-products">cake</a>
+             </li>
+              <li class="nav-item">
+          <a class="nav-link  " href="#imges-products">pie</a>
+             </li>
+          </ul>
+        </li>
+
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Carrot</a>
+          <a class="nav-link  border border-light rounded-pill px-4 py-2" href="#about">About</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Corn</a>
+          <a class="nav-link  border border-light rounded-pill px-4 py-2" href="#specials">Specials</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link  border border-light rounded-pill px-4 py-2" href="#testimonials">Reviews</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  border border-light rounded-pill px-4 py-2" href="#contact">Contact</a>
+        </li>
+
+      </ul>
     </div>
+
   </div>
 </nav>
-    <!-- end navbar -->
+<!-- end navbar -->
 
+    <!-- start header -->
+    <div id="header" class="d-flex">
+    
+    </div>
+    <!-- end header -->
 
      <!-- start section cart -->
-      <section id="imges-products">
+      <section id="imges-products" class="py-3">
+        <h2 class="text-center  fs-1">OUR MENU</h2>
         <div class="container">
             <div class="row" id="rowBody">
                 
@@ -45,6 +101,246 @@
         </div>
       </section>
      <!-- end section cart -->
+ <!-- start about  -->
+  <div id="about">
+      <div class="container py-5 ">
+        <div class="row">
+          <div class="col-4">
+            <div class="img2">
+              <img src="images/about.jpg" class="img-fluid " alt="">
+              <div class="demo text-center">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 ">
+            <div class="abouttitle">
+              <h2>Our Story</h2>
+              <p>Lorem ipsum dolor sit amet,
+                 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+                  <hr/>
+                  <div class="row">
+                    <div class="col-4">
+                      <ul>
+                        <li><span class="text-body fw-semibold " ><i class="fa-solid fa-angle-right"></i></span>Family Recipes   100</li>
+                      </ul>
+                      <hr/>
+                      <ul>
+                        <li><span class="text-body fw-semibold"><i class="fa-solid fa-angle-right"></i></span>Farm to Table   50</li>
+                      </ul>
+                      <hr/>
+                      <ul>
+                        <li><span class="text-body fw-semibold"><i class="fa-solid fa-angle-right"></i></span>Cultural Heritage   20</li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+ <!-- end about  -->
+   <!--start Specials Accordion -->
+    <section id="specials" class="py-20 section-spacing">
+        <div class="container ms-auto px-6">
+            <h2 class="text-5xl fw-bold text-center mb-12">Daily Specials & Events</h2>
+            <div class="accordion  p-6 rounded-xl text-center mb-6 special-offer">
+                <div id="element" class="accordion-item" onclick="toggleAccordion(this)">
+                    <h3 class="fs-2 fw-bold mb-4 cursor-pointer text-danger">Monday Madness: Buy One Get One Half Off</h3>
+                    <div class="mt-4">
+                        <p class="text-lg mb-4">Every Monday, enjoy our signature Supreme Delight – buy one large, get a second at half price! Perfect for family dinners or group gatherings.</p>
+                        <div class="row align-items-center mt-4">
+                         <div class="col-md-5 mb-3 mb-md-0">
+                          <img
+                            src="images/c145ce00-3cf1-457d-8bd5-f82dbc63fa54.png"
+                            alt="Two Supreme Delight pizzas side by side"
+                            class="img-fluid rounded shadow">
+                         </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="accordion  p-6 rounded-xl text-center mb-6">
+                <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <h3 class="fs-2 fw-bold mb-4 cursor-pointer text-danger">Family Night Fridays</h3>
+                    <div class="mt-4">
+                        <p class="text-lg mb-4">Fridays are for family! Get a large pizza + 2 sides for only $29.99. Includes salad bar access for the whole family.</p>
+                        <div class="row align-items-center mt-4">
+                         <div class="col-md-5 mb-3 mb-md-0">
+                          <img
+                            src="images/c35e9ca0-9c29-4b1b-8356-b4c424f5e157.png"
+                            alt="Two Supreme Delight pizzas side by side"
+                            class="img-fluid rounded shadow">
+                         </div>
+                      </div>
+                </div>
+            </div>
+            <div class="accordion  p-6 rounded-xl text-center">
+                <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <h3 class="fs-2 fw-bold mb-4 cursor-pointer text-danger">Sunday Sauce Special</h3>
+                     <div class="mt-4">
+                        <p class="text-lg mb-4">Join us for our traditional Sunday homemade sauce tasting, paired with unlimited garlic bread and live Italian music.</p>
+                        <div class="row align-items-center mt-4">
+                         <div class="col-md-5 mb-3 mb-md-0">
+                          <img
+                            src="images/1cbe18d2-17cb-4204-866b-358684de5255.png"
+                            alt="Two Supreme Delight pizzas side by side"
+                            class="img-fluid rounded shadow">
+                         </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Specials Accordion -->
+     <!-- Testimonials -->
+<section id="testimonials" class="py-5 bg-dark text-white">
+  <div class="container">
+    
+    <h2 class="display-5 fw-bold text-center mb-5">
+      What Our Customers Say
+    </h2>
+
+    <div class="row g-4">
+
+      <!-- Testimonial 1 -->
+      <div class="col-md-4">
+        <div class="bg-white text-dark p-4 rounded shadow h-100 text-center">
+          <img
+            src="images/ede9517e-49f8-4dac-94f4-2d898777b894.png"
+            alt="Smiling young woman"
+            class="rounded-circle mb-3"
+            width="64"
+            height="64">
+          
+          <p class="mb-3">
+            "Pizza Steve's Margherita is out of this world – fresh, flavorful, and exactly what I crave after a long day at work."
+          </p>
+
+          <cite class="d-block fw-semibold">
+            Lisa T., Regular Customer
+          </cite>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-4">
+        <div class="bg-white text-dark p-4 rounded shadow h-100 text-center">
+          <img
+            src="images/c3f08b36-b7e6-4619-bf21-6837d6f52354.png"
+            alt="Bearded man enjoying pizza"
+            class="rounded-circle mb-3"
+            width="64"
+            height="64">
+
+          <p class="mb-3">
+            "The crust is perfection – crispy outside, soft inside. Steve's secret sauce is what brings me back every week!"
+          </p>
+
+          <cite class="d-block fw-semibold">
+            Mike R., Foodie Blogger
+          </cite>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4">
+        <div class="bg-white text-dark p-4 rounded shadow h-100 text-center">
+          <img
+            src="images/c35e9ca0-9c29-4b1b-8356-b4c424f5e157.png"
+            alt="Happy mother with kids"
+            class="rounded-circle mb-3"
+            width="64"
+            height="64">
+
+          <p class="mb-3">
+            "Great for kids! My little ones love the Supreme – it's loaded with their favorites. Affordable and delicious."
+          </p>
+
+          <cite class="d-block fw-semibold">
+            Sara L., Mother of Two
+          </cite>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end Testimonial -->
+ <!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="display-5 fw-bold text-center mb-5 ">
+      Get in Touch
+    </h2>
+
+    <div class="row g-5">
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <h3 class="h4 fw-bold mb-4">Visit Us</h3>
+
+        <p class="fs-5 mb-2">123 Flavor Street, Naples District, Cityville, ST 12345</p>
+        <p class="fs-5 mb-2">Phone: (555) 123-PIZZA</p>
+        <p class="fs-5 mb-2">Email: hello@borcelle.com</p>
+        <p class="fs-5">Hours: Mon–Sun 11am–11pm</p>
+
+        <img
+          src="images/1600w-hAyw2rHSifM.jpg"
+          alt="Exterior view of Pizza Steve restaurant"
+          class="img-fluid rounded shadow mt-4">
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <h3 class="h4 fw-bold mb-4">Send Us a Message</h3>
+
+        <form id="contact-form">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              placeholder="Your Name"
+              required>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              placeholder="Your Email"
+              required>
+          </div>
+
+          <div class="mb-4">
+            <textarea
+              class="form-control form-control-lg"
+              rows="5"
+              placeholder="Message"
+              required></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-danger btn-lg px-5">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end contact -->
 
      <!-- start loading -->
       <div id="loading">
@@ -52,7 +348,21 @@
       </div>
      <!-- end loading -->
       
-
+       <!-- start footer -->
+             <div id="footer" class="bg-dark">
+              <div class="demo text-center ">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <p  class="text-center py-4">Copy Right 2025 © By <span>
+                <a href="#" class="nav-link d-inline " >
+                  Eng Fatma
+                </a>
+              </span>  All Rights Reserved</p>
+             </div>
+             <!-- end footer -->
 
 
     <script src="js/bootstrap.bundle.min.js"></script>

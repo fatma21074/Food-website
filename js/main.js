@@ -1,7 +1,19 @@
 const rowBody= document.getElementById("rowBody")
 const btns = document.querySelectorAll(".nav-link");
 const loading=document.getElementById("loading");
+const nav = document.getElementById("navbarSection");
+const header = document.getElementById("header");
 
+window.addEventListener('scroll', () => {
+  if(this.scrollY>=header.offsetHeight-nav.offsetHeight)
+  {
+    nav.classList.add('bg-dark')
+
+  }
+  else {
+    nav.classList.remove('bg-dark')
+  }
+})
 
 async function getMeals(query='pizza') {
     let data = await fetch(`https://forkify-api.herokuapp.com/api/search?q=${query}`)
@@ -14,7 +26,7 @@ async function getMeals(query='pizza') {
 
 function display(arr){
    let box='';
-    for(let i =0 ;i<arr.length ; i++){
+    for(let i =0 ;i<8 ; i++){
         box+=`
         <div class="col-md-3 py-3" >
                     <div class="card" >
@@ -38,3 +50,6 @@ btns.forEach(function (btn) {
 })
 getMeals()
 
+function toggleAccordion(element) {
+            element.classList.toggle('active');
+        }
